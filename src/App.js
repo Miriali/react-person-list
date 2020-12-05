@@ -1,25 +1,57 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => <PersonList/>;
 
-export default App;
+const PersonList = () => {
+
+  const people = [
+    {
+      img: 22, 
+      name: 'John Doe', 
+      job:'developer',
+      message: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, reiciendis".'
+    },
+    {
+      img: 32, 
+      name: 'Bob Smith', 
+      job:'designer',
+      message: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, reiciendis".'
+    },
+
+    {
+      img: 56, 
+      name: 'Peter Parker', 
+      job:'artista',
+      message: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, reiciendis".'
+    }
+  ]
+
+
+  return (
+   <section>
+     <Person person={people[0]}/>
+     <Person person={people[1]}/>
+     <Person person={people[2]}/>
+   </section>)
+};
+        
+const Person = (props) => {
+  const{img,name,job, message} = props.person;
+
+  const url = `https://randomuser.me/api/portraits/thumb/men/${img}.jpg`;
+
+
+  return ( 
+    <div className="person">
+      <img src={url} alt="images"/>
+      <div>
+        <h4>{name}</h4>
+        <h4>{job}</h4>
+        <p>{message}</p>
+      </div>
+    </div>
+);
+};
+
+export default App
