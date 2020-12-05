@@ -2,7 +2,7 @@
 
 Hi everyone! :octocat:
 
-Person list built using Reactjs, it´s a useful and simple project for when you are starting to learn reactjs:
+Person list developed using Reactjs, it's a useful and simple project for improve your skills with this JavaScript library 
 
 #### Screenshot: :camera_flash:
 
