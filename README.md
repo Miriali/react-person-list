@@ -61,7 +61,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - [UiGradients](https://uigradients.com/)
 - [Material Design Box Shadows](https://codepen.io/sdthornton/pen/wBZdXq)
 
-#### Authors :woman_technologist:
+#### Author :woman_technologist:
 [Miriali López Melean](https://github.com/Miriali) 
 
 #### Stay In Touch :nerd_face:
